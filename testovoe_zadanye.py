@@ -49,14 +49,6 @@ def callback_inline(call):
 			if call.data == 'contacts':
 				bot.send_message(call.message.chat.id, 'Мы находимся по адресу: г.Москва, Варшавское шоссе д.1 ст 1, офис В605')
 
-			# # remove inline buttons
-			# bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="О компании",
-			# 	reply_markup=None)
-
-			# # show alert
-			# bot.answer_callback_query(callback_query_id=call.id, show_alert=False,
-			# 	text="ЭТО ТЕСТОВОЕ УВЕДОМЛЕНИЕ!!11")
-
 	except Exception as e:
 		print(repr(e))
 
